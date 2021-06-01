@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sign UP page for DocLogs">
+    <meta name="author" content="Shubham Auddy">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>DocLogs</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form action="/" method="POST">
+            <img class="mb-4" src="images/logo.png" alt="DocLogs Logo" width="100" height="110">
+            <h1 class="h3 mb-3 fw-normal"><span>DocLogs</span> </h1>
+            <h2>SIGN UP</h2>
+
+            <div class="form-floating top">
+                <input type="text" class="form-control" name="fname" placeholder="First Name" autofocus>
+            </div>
+            <div class="form-floating middle">
+                <input type="text" class="form-control" name="lname" placeholder="Last Name">
+            </div>
+            <div class="form-floating bottom">
+                <input type="Email" class="form-control" name="email" placeholder="Email">
+            </div>
+
+            <button class="w-100 btn btn-lg btn-dark" type="submit">Sign Me Up!</button>
+        </form>
+
+        <!-- <form action="/" method="POST">
+            <button name="about" class=" mt-5 w-90 btn badge badge-dark  btn-lg" type="submit"
+                onclick="about()">About</button>
+        </form> -->
+
+        <p class="mt-5 mb-3 text-muted">&copy; DocLogs by Shubham Auddy</p>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

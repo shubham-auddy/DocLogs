@@ -1,0 +1,15 @@
+{
+  "name": "doclogs",
+  "version": "1.0.0",
+  "description": "This web app signs up patients of any medical facilty, for sending them early updates and informations like medicine availability, Doctor arrival, check up remainder etc.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Auddy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

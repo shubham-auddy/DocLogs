@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The sign up precess failed due to some problem.">
+  <meta name="author" content="Shubham Auddy">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>UH OH!</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(46, 46, 46);">
+
+  <main>
+
+    <div class="p-5 text-danger bg-dark rounded-3">
+      <img src="images/fail.png" alt="failed" width="100" height="110">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Sign up Failure!</h1>
+        <p class="col-md-8 fs-4">Cannot sign you up with DocLog due to some problem.<br>
+          We request you to try again after sometime.
+        </p>
+      </div>
+      <form action="/failure" method="POST">
+        <button type="submit" class="btn btn-warning btn-lg">Try Again</button>
+      </form>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
