@@ -4,6 +4,11 @@ const https = require("https");
 const app = express();
 var flag = true;
 
+var api = require("./config");
+var  dci = api.DCI
+var api_key = api.MY_API_KEY;
+var audience_key = api.AUDIENCE_KEY;
+
 function about(){
     flag = false;
 }
@@ -35,10 +40,10 @@ app.post("/", function(req, res){
     }
 
     const jsondata = JSON.stringify(data);
-    const url = "https://us6.api.mailchimp.com/3.0/lists/23ec01306a";
+    const url = "https://"+ dci + ".api.mailchimp.com/3.0/lists/"+audience_key;
     const options = {
         method : "POST",
-         auth : "shubhamauddy:69c62a9d55bda5584981604501a198ed-us6"
+         auth : "shubhamauddy:"+api_key
     }
     
     const request = https.request(url, options, function(response){
@@ -71,3 +76,4 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
     console.log("server running");
 })
+
